@@ -51,31 +51,31 @@ To solve the issue:
 
 Some player names included an asterisk (*).
 
-This created matching issues d*ring SQL JOIN operations.
-
-Solutio*:
-
-- Identified affected records
--*Cleaned player names in Excel
-- Re*laced original values with the cle*ned version
-
-#### Duplicate Player*
-
-Multiple players shared the same*name.
+This created matching issues during SQL JOIN operations.
 
 Solution:
 
-Created a compos*te key:
+- Identified affected records
+- Cleaned player names in Excel
+- Replaced original values with the cle*ned version
+
+#### Duplicate Players
+
+Multiple players shared the same name.
+
+Solution:
+
+Created a composite key:
 
 ```sql
 Player_Name + NBA_*ntry_Year
 ```
 
-This ensured unique*player identification throughout t*e analysis.
+This ensured unique*player identification throughout the analysis.
 
 ---
 
-## Data Modellin*
+## Data Modelling
 
 After cleaning the data, I ident*fied the key variables required:
 
@@ -84,46 +84,46 @@ After cleaning the data, I ident*fied the key variables required:
 - Po*ition
 - Season Statistics
 
-The dat* was then prepared for SQL analysi*.
+The data was then prepared for SQL analysis.
 
 ---
 
-## Performance Scoring Mod*l
+## Performance Scoring Model
 
-To compare players objectively,*I created a weighted performance s*ore.
+To compare players objectively,I created a weighted performance score.
 
 ### Methodology
 
-1. Research*d the most important statistics fo* each NBA position.
-2. Ranked thos* statistics by importance.
-3. Assi*ned weights from 7 (most important* to 1 (least important).
-4. Calcul*ted a weighted average score.
+1. Researched the most important statistics for each NBA position.
+2. Ranked those statistics by importance.
+3. Assigned weights from 7 (most important statistics) to 1 (least important statistics).
+4. Calculated a weighted average score.
 
-Thi* generated a single performance in*icator for each player.
+This generated a single performance indicator for each player.
 
 ---
 
-## S*L Analysis
+## SQL Analysis
 
-The SQL workflow follo*s two main steps.
+The SQL workflow follows two main steps.
 
-### Step 1 - Da*a Preparation (CTEs)
+### Step 1 - Data Preparation (CTEs)
 
-Common Table*Expressions were used to:
+Common Table Expressions were used to:
 
-- Prepa*e data
+- Prepare data
 - Combine datasets
-- Calcul*te intermediate metrics
+- Calculate intermediate metrics
 
-### Step * - Final Analysis
+### Step 2 - Final Analysis
 
-The final query*was used to:
+The final query was used to:
 
-- Calculate player s*ores
+- Calculate player scores
 - Analyse injury history
 - Co*pare career trends
 
-### SQL Concep*s Used
+### SQL Concepts Used
 
 - JOINs
 - CTEs
@@ -133,48 +133,48 @@ The final query*was used to:
 
 ---
 
-## Power BI Dashboa*d
+## Power BI Dashboard
 
-The SQL output was imported int* Power BI.
+The SQL output was imported into Power BI.
 
-The dashboard includes*
+The dashboard includes
 
 - Overall player scores
-- Perfor*ance evolution
-- Most injured play*rs
+- Performance evolution
+- Most injured players
 - Least injured players
 - Injur* comparisons
 
-Custom measures were*created to improve the presentatio* and interpretation of results.
+Custom measures were created to improve the presentation and interpretation of results.
 
--*-
+---
 
 ## Challenges Faced
 
-### Data Q*ality Issues
+### Data Quality Issues
 
-- Incorrect column f*rmats
+- Incorrect column formats
 - Duplicate records
 - Incons*stent player names
 
-### SQL Readab*lity
+### SQL Readability
 
-The first versions of the SQ* script became difficult to mainta*n.
+The first versions of the SQL script became difficult to maintain.
 
-After discovering Common Table*Expressions (CTEs), I restructured*the code to increase readability a*d reduce duplication.
+After discovering Common Table Expressions (CTEs), I restructured the code to increase readability and reduce duplication.
 
-### Power B* Measures
+### Power BI Measures
 
-Several visualisations *nitially produced misleading resul*s.
+Several visualisations initially produced misleading results.
 
-Custom measures were developed*to ensure accurate reporting.
+Custom measures were developed to ensure accurate reporting.
 
----*
+--- 
 ## Key Findings
 
-The analysis sug*ests that:
+The analysis suggests that:
 
-- The most injured pla*ers are often among the highest-pe*forming players.
+- The most injured players are often among the highest-performing players.
 - Modern NBA players experience more reported injuries than previous generations.
 - Injuries do not appear to cause a significant long-term decline in overall career performance.
 
