@@ -219,6 +219,40 @@ Through this project I developed practical experience in:
 
 ---
 
+
+## SQL Methodology
+
+The analysis was performed in two steps:
+
+### Step 1 - Data Preparation
+
+A Common Table Expression (CTE) was created to:
+
+- Merge injury, player and season datasets
+- Associate each player with their season statistics
+- Select position-specific KPIs
+- Prepare the dataset for scoring
+
+### Step 2 - Performance Score Calculation
+
+A weighted score was created using seven key statistics.
+
+Weights ranged from:
+
+- 7 points for the most important statistic
+- 1 point for the least important statistic
+
+This generated a single performance indicator allowing player comparison across seasons and positions.
+
+### SQL Concepts Used
+
+- CTEs
+- JOINs
+- CASE WHEN
+- Aggregations
+- Weighted Scoring Models
+---
+
 ## Author
 
 Patrick ABENIN
