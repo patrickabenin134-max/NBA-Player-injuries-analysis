@@ -77,11 +77,11 @@ This ensured unique*player identification throughout the analysis.
 
 ## Data Modelling
 
-After cleaning the data, I ident*fied the key variables required:
+After cleaning the data, I identified the key variables required:
 
-* Player Name
+- Player Name
 - Injury Periods
-- Po*ition
+- Position
 - Season Statistics
 
 The data was then prepared for SQL analysis.
@@ -121,13 +121,13 @@ The final query was used to:
 
 - Calculate player scores
 - Analyse injury history
-- Co*pare career trends
+- Compare career trends
 
 ### SQL Concepts Used
 
 - JOINs
 - CTEs
-- Aggregati*ns
+- Aggregations
 - CASE statements
 - Data transf*rmations
 
@@ -143,7 +143,7 @@ The dashboard includes
 - Performance evolution
 - Most injured players
 - Least injured players
-- Injur* comparisons
+- Injury comparisons
 
 Custom measures were created to improve the presentation and interpretation of results.
 
@@ -155,7 +155,7 @@ Custom measures were created to improve the presentation and interpretation of r
 
 - Incorrect column formats
 - Duplicate records
-- Incons*stent player names
+- Inconsistent player names
 
 ### SQL Readability
 
